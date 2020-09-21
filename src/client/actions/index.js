@@ -6,7 +6,7 @@ import dataUtils from "../utils/dataUtils";
 export const FETCH_MISSIONS = "fetch_articles";
 
 export const fetchMissions = (searchString = "") => async (dispatch) => {
-  let url = `https://api.spaceXdata.com/v3/launches?limit=10&${searchString.slice(
+  let url = `https://api.spaceXdata.com/v3/launches?limit=100&${searchString.slice(
     1
   )}`;
 
